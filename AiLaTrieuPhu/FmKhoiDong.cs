@@ -74,12 +74,6 @@ namespace AiLaTrieuPhu
 
         }
 
-        private void btThongTin_Click(object sender, EventArgs e)
-        {
-            fmThongTin fmThongTin = new fmThongTin();
 
-            fmThongTin.Show();
-
-        }
     }
 }

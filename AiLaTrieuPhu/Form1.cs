@@ -30,6 +30,8 @@ namespace AiLaTrieuPhu
         {
             ptbThuaCuoc.Hide();
             lbTienThuong.Hide();
+            lbYourScore.Hide();
+            
         }
 
         private void btA_Click_1(object sender, EventArgs e)
@@ -46,8 +48,7 @@ namespace AiLaTrieuPhu
                 btD.Enabled = false;
 
                 //Bây giờ là lúc tôi đưa ra câu trả lời đúng
-                C_AmThanh.batAmThanh("answer_t");
-
+                C_AmThanh.batAmThanh("answer_t.wav");
                 //nếu trả lời đúng thì chuyển câu
                 if (String.Equals(C_KetNoi.layDuLieu("SELECT DapAn FROM tbl" + bang.ToString(), "DapAn", i), "A"))
                 {
@@ -75,7 +76,7 @@ namespace AiLaTrieuPhu
                 btD.Enabled = false;
 
                 //Bây giờ là lúc tôi đưa ra câu trả lời đúng
-                C_AmThanh.batAmThanh("answer_t");
+                C_AmThanh.batAmThanh("answer_t.wav");
 
                 //nếu trả lời đúng thì chuyển câu
                 if (String.Equals(C_KetNoi.layDuLieu("SELECT DapAn FROM tbl" + bang.ToString(), "DapAn", i), "B"))
@@ -105,7 +106,7 @@ namespace AiLaTrieuPhu
                 btD.Enabled = false;
 
                 //Bây giờ là lúc tôi đưa ra câu trả lời đúng
-                C_AmThanh.batAmThanh("answer_t");
+                C_AmThanh.batAmThanh("answer_t.wav");
 
                 //nếu trả lời đúng thì chuyển câu
                 if (String.Equals(C_KetNoi.layDuLieu("SELECT DapAn FROM tbl" + bang.ToString(), "DapAn", i), "C"))
@@ -135,7 +136,7 @@ namespace AiLaTrieuPhu
                 btC.Enabled = false;
 
                 //Bây giờ là lúc tôi đưa ra câu trả lời đúng
-                C_AmThanh.batAmThanh("answer_t");
+                C_AmThanh.batAmThanh("answer_t.wav");
 
                 //nếu trả lời đúng thì chuyển câu
                 if (String.Equals(C_KetNoi.layDuLieu("SELECT DapAn FROM tbl" + bang.ToString(), "DapAn", i), "D"))
@@ -180,7 +181,7 @@ namespace AiLaTrieuPhu
             }
 
             //bật âm thanh trả lời sai
-            C_AmThanh.batAmThanh("bgmusic_answer_f");
+            C_AmThanh.batAmThanh("bgmusic_answer_f1.wav");
 
             bt5050.Enabled = false;
             btDung.Enabled = false;
@@ -229,8 +230,8 @@ namespace AiLaTrieuPhu
             lbSoCau.Text = "Câu " + c.ToString();
 
             //Đọc số câu hỏi
-            string cauHoi = "start_cau" + c.ToString();
-            C_AmThanh.batAmThanh(cauHoi);
+            //string cauHoi = "start_cau" + c.ToString();
+            //C_AmThanh.batAmThanh(cauHoi);
 
             //Đọc câu hỏi và các phương án
             tmCauHoi.Enabled = true;
@@ -631,7 +632,7 @@ namespace AiLaTrieuPhu
         private void tmTraLoiDung_Tick(object sender, EventArgs e)
         {
             //Âm thanh trả lời đúng
-            C_AmThanh.batAmThanh("bgmusic_answer_t");
+            C_AmThanh.batAmThanh("bgmusic_answer_t1.wav");
 
             //Đổi màu nền nút đáp an đúng
             if (C_KetNoi.layDuLieu("SELECT DapAn FROM tbl" + bang.ToString(), "DapAn", i) == "A")
@@ -714,17 +715,17 @@ namespace AiLaTrieuPhu
 
             tm5050.Enabled = false;
         }
-        //đọc câu hỏi và các phương án trả lời
-        private void tmCauHoi_Tick(object sender, EventArgs e)
-        {
-            //Lấy tiêu đề âm thanh trong bảng để bật đúng âm thanh
-            string AmThanh = C_KetNoi.layDuLieu("SELECT AmThanh FROM tbl" + bang.ToString(), "AmThanh", i);
-            AmThanh = AmThanh.Trim();
-            //bật nhạc
-            C_AmThanh.batAmThanh(AmThanh);
+        ////đọc câu hỏi và các phương án trả lời
+        private void tmCauHoi_Tick(object sender, EventArgs e) { }
+        //{
+        //    //Lấy tiêu đề âm thanh trong bảng để bật đúng âm thanh
+        //    string AmThanh = C_KetNoi.layDuLieu("SELECT AmThanh FROM tbl" + bang.ToString(), "AmThanh", i);
+        //    AmThanh = AmThanh.Trim();
+        //    //bật nhạc
+        //    C_AmThanh.batAmThanh(AmThanh);
 
-            tmCauHoi.Enabled = false;
-        }
+        //    tmCauHoi.Enabled = false;
+        //}
 
         public static FmKhoiDong fmKhoiDong = new FmKhoiDong();
         //chơi lại
@@ -746,6 +747,7 @@ namespace AiLaTrieuPhu
 
             ptbThuaCuoc.Hide();
             lbTienThuong.Hide();
+            lbYourScore.Hide();
 
             fmKhoiDong.Show();
             fmKhoiDong.btBatDau.Show();
@@ -757,7 +759,7 @@ namespace AiLaTrieuPhu
         //trợ giúp 50 50
         private void bt5050_Click(object sender, EventArgs e)
         {
-            C_AmThanh.batAmThanh("sound_trogiup_50_50");
+            C_AmThanh.batAmThanh("sound_trogiup_50_50_1.wav");
 
             tm5050.Enabled = true;
 
@@ -781,25 +783,26 @@ namespace AiLaTrieuPhu
         //dê chuột vào Dừng cuộc chơi
         private void btDung_MouseHover(object sender, EventArgs e)
         {
-            C_AmThanh.batAmThanh("tro_giup_dung_choi");
+            C_AmThanh.batAmThanh("tro_giup_dung_choi1.wav");
         }
 
         //dê chuột vào trợ giúp 50, 50
         private void bt5050_MouseHover(object sender, EventArgs e)
         {
-            C_AmThanh.batAmThanh("sound_chon_50_50");
+            C_AmThanh.batAmThanh("sound_chon_50_50_1.wav");
         }
 
         //sau khi thua cuộc
         private void tmThuaCuoc_Tick(object sender, EventArgs e)
         {
-            C_AmThanh.batAmThanh("sound_ket_thuc");
+            C_AmThanh.batAmThanh("sound_ket_thuc1.wav");
 
             ptbThuaCuoc.Show();
             lbTienThuong.Show();
+            lbYourScore.Show();
+            
 
             tmChoiLai.Enabled = true;
-
             tmThuaCuoc.Enabled = false;
         }
 
@@ -831,7 +834,7 @@ namespace AiLaTrieuPhu
 
             ptbThuaCuoc.Hide();
             lbTienThuong.Hide();
-
+            lbYourScore.Hide();
             tmChoiNgay.Enabled = false;
         }
 
@@ -841,12 +844,6 @@ namespace AiLaTrieuPhu
             Application.Exit();
         }
 
-        private void btThongTin_Click(object sender, EventArgs e)
-        {
-            fmThongTin fmThongTin = new fmThongTin();
-
-            fmThongTin.Show();
-        }
 
     }
 }

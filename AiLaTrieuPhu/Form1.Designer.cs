@@ -68,7 +68,8 @@
             this.lbTienThuong = new System.Windows.Forms.Label();
             this.tmThuaCuoc = new System.Windows.Forms.Timer(this.components);
             this.tmChoiNgay = new System.Windows.Forms.Timer(this.components);
-            this.btThongTin = new System.Windows.Forms.Button();
+            this.lbYourScore = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.ptbThuaCuoc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,9 +79,10 @@
             this.btA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btA.ForeColor = System.Drawing.Color.White;
-            this.btA.Location = new System.Drawing.Point(71, 432);
+            this.btA.Location = new System.Drawing.Point(95, 532);
+            this.btA.Margin = new System.Windows.Forms.Padding(4);
             this.btA.Name = "btA";
-            this.btA.Size = new System.Drawing.Size(250, 40);
+            this.btA.Size = new System.Drawing.Size(333, 49);
             this.btA.TabIndex = 0;
             this.btA.Text = "A";
             this.btA.UseVisualStyleBackColor = false;
@@ -92,9 +94,10 @@
             this.btB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btB.ForeColor = System.Drawing.Color.White;
-            this.btB.Location = new System.Drawing.Point(356, 432);
+            this.btB.Location = new System.Drawing.Point(475, 532);
+            this.btB.Margin = new System.Windows.Forms.Padding(4);
             this.btB.Name = "btB";
-            this.btB.Size = new System.Drawing.Size(250, 40);
+            this.btB.Size = new System.Drawing.Size(333, 49);
             this.btB.TabIndex = 0;
             this.btB.Text = "B";
             this.btB.UseVisualStyleBackColor = false;
@@ -106,9 +109,10 @@
             this.btC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btC.ForeColor = System.Drawing.Color.White;
-            this.btC.Location = new System.Drawing.Point(71, 494);
+            this.btC.Location = new System.Drawing.Point(95, 608);
+            this.btC.Margin = new System.Windows.Forms.Padding(4);
             this.btC.Name = "btC";
-            this.btC.Size = new System.Drawing.Size(250, 40);
+            this.btC.Size = new System.Drawing.Size(333, 49);
             this.btC.TabIndex = 0;
             this.btC.Text = "C";
             this.btC.UseVisualStyleBackColor = false;
@@ -120,9 +124,10 @@
             this.btD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btD.ForeColor = System.Drawing.Color.White;
-            this.btD.Location = new System.Drawing.Point(356, 494);
+            this.btD.Location = new System.Drawing.Point(475, 608);
+            this.btD.Margin = new System.Windows.Forms.Padding(4);
             this.btD.Name = "btD";
-            this.btD.Size = new System.Drawing.Size(250, 40);
+            this.btD.Size = new System.Drawing.Size(333, 49);
             this.btD.TabIndex = 0;
             this.btD.Text = "D";
             this.btD.UseVisualStyleBackColor = false;
@@ -134,9 +139,10 @@
             this.lbSoCau.BackColor = System.Drawing.Color.Blue;
             this.lbSoCau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbSoCau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbSoCau.Location = new System.Drawing.Point(73, 355);
+            this.lbSoCau.Location = new System.Drawing.Point(97, 437);
+            this.lbSoCau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSoCau.Name = "lbSoCau";
-            this.lbSoCau.Size = new System.Drawing.Size(41, 20);
+            this.lbSoCau.Size = new System.Drawing.Size(52, 25);
             this.lbSoCau.TabIndex = 1;
             this.lbSoCau.Text = "Câu";
             // 
@@ -146,9 +152,10 @@
             this.lbCauHoi.BackColor = System.Drawing.Color.Blue;
             this.lbCauHoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbCauHoi.ForeColor = System.Drawing.Color.White;
-            this.lbCauHoi.Location = new System.Drawing.Point(135, 355);
+            this.lbCauHoi.Location = new System.Drawing.Point(180, 437);
+            this.lbCauHoi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCauHoi.Name = "lbCauHoi";
-            this.lbCauHoi.Size = new System.Drawing.Size(138, 20);
+            this.lbCauHoi.Size = new System.Drawing.Size(169, 25);
             this.lbCauHoi.TabIndex = 2;
             this.lbCauHoi.Text = "Câu hỏi load lên";
             // 
@@ -158,9 +165,10 @@
             this.lbA.BackColor = System.Drawing.Color.Blue;
             this.lbA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbA.Location = new System.Drawing.Point(76, 442);
+            this.lbA.Location = new System.Drawing.Point(101, 544);
+            this.lbA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbA.Name = "lbA";
-            this.lbA.Size = new System.Drawing.Size(21, 20);
+            this.lbA.Size = new System.Drawing.Size(27, 25);
             this.lbA.TabIndex = 3;
             this.lbA.Text = "A";
             // 
@@ -170,9 +178,10 @@
             this.lbD.BackColor = System.Drawing.Color.Blue;
             this.lbD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbD.Location = new System.Drawing.Point(362, 504);
+            this.lbD.Location = new System.Drawing.Point(483, 620);
+            this.lbD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbD.Name = "lbD";
-            this.lbD.Size = new System.Drawing.Size(22, 20);
+            this.lbD.Size = new System.Drawing.Size(27, 25);
             this.lbD.TabIndex = 4;
             this.lbD.Text = "D";
             // 
@@ -182,9 +191,10 @@
             this.lbC.BackColor = System.Drawing.Color.Blue;
             this.lbC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbC.Location = new System.Drawing.Point(76, 504);
+            this.lbC.Location = new System.Drawing.Point(101, 620);
+            this.lbC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbC.Name = "lbC";
-            this.lbC.Size = new System.Drawing.Size(21, 20);
+            this.lbC.Size = new System.Drawing.Size(28, 25);
             this.lbC.TabIndex = 3;
             this.lbC.Text = "C";
             // 
@@ -195,9 +205,10 @@
             this.lb15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb15.ForeColor = System.Drawing.Color.White;
-            this.lb15.Location = new System.Drawing.Point(688, 62);
+            this.lb15.Location = new System.Drawing.Point(917, 76);
+            this.lb15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb15.Name = "lb15";
-            this.lb15.Size = new System.Drawing.Size(199, 20);
+            this.lb15.Size = new System.Drawing.Size(240, 25);
             this.lb15.TabIndex = 13;
             this.lb15.Text = "15.         150000            ";
             // 
@@ -207,9 +218,10 @@
             this.lb14.BackColor = System.Drawing.Color.SteelBlue;
             this.lb14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb14.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb14.Location = new System.Drawing.Point(688, 95);
+            this.lb14.Location = new System.Drawing.Point(917, 117);
+            this.lb14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb14.Name = "lb14";
-            this.lb14.Size = new System.Drawing.Size(199, 20);
+            this.lb14.Size = new System.Drawing.Size(240, 25);
             this.lb14.TabIndex = 14;
             this.lb14.Text = "14.          80000             ";
             // 
@@ -219,9 +231,10 @@
             this.lb10.BackColor = System.Drawing.Color.SteelBlue;
             this.lb10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb10.ForeColor = System.Drawing.Color.White;
-            this.lb10.Location = new System.Drawing.Point(688, 227);
+            this.lb10.Location = new System.Drawing.Point(917, 279);
+            this.lb10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb10.Name = "lb10";
-            this.lb10.Size = new System.Drawing.Size(199, 20);
+            this.lb10.Size = new System.Drawing.Size(240, 25);
             this.lb10.TabIndex = 15;
             this.lb10.Text = "10.          22000             ";
             // 
@@ -231,9 +244,10 @@
             this.lb13.BackColor = System.Drawing.Color.SteelBlue;
             this.lb13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb13.Location = new System.Drawing.Point(688, 128);
+            this.lb13.Location = new System.Drawing.Point(917, 158);
+            this.lb13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb13.Name = "lb13";
-            this.lb13.Size = new System.Drawing.Size(199, 20);
+            this.lb13.Size = new System.Drawing.Size(240, 25);
             this.lb13.TabIndex = 16;
             this.lb13.Text = "13.          60000             ";
             // 
@@ -243,9 +257,10 @@
             this.lb9.BackColor = System.Drawing.Color.SteelBlue;
             this.lb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb9.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb9.Location = new System.Drawing.Point(688, 260);
+            this.lb9.Location = new System.Drawing.Point(917, 320);
+            this.lb9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb9.Name = "lb9";
-            this.lb9.Size = new System.Drawing.Size(199, 20);
+            this.lb9.Size = new System.Drawing.Size(240, 25);
             this.lb9.TabIndex = 17;
             this.lb9.Text = "9.            14000             ";
             // 
@@ -255,9 +270,10 @@
             this.lb12.BackColor = System.Drawing.Color.SteelBlue;
             this.lb12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb12.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb12.Location = new System.Drawing.Point(688, 161);
+            this.lb12.Location = new System.Drawing.Point(917, 198);
+            this.lb12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb12.Name = "lb12";
-            this.lb12.Size = new System.Drawing.Size(199, 20);
+            this.lb12.Size = new System.Drawing.Size(240, 25);
             this.lb12.TabIndex = 18;
             this.lb12.Text = "12.          40000             ";
             // 
@@ -267,9 +283,10 @@
             this.lb8.BackColor = System.Drawing.Color.SteelBlue;
             this.lb8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb8.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb8.Location = new System.Drawing.Point(688, 293);
+            this.lb8.Location = new System.Drawing.Point(917, 361);
+            this.lb8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb8.Name = "lb8";
-            this.lb8.Size = new System.Drawing.Size(199, 20);
+            this.lb8.Size = new System.Drawing.Size(240, 25);
             this.lb8.TabIndex = 19;
             this.lb8.Text = "8.            10000             ";
             // 
@@ -279,9 +296,10 @@
             this.lb11.BackColor = System.Drawing.Color.SteelBlue;
             this.lb11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb11.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb11.Location = new System.Drawing.Point(688, 194);
+            this.lb11.Location = new System.Drawing.Point(917, 239);
+            this.lb11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb11.Name = "lb11";
-            this.lb11.Size = new System.Drawing.Size(199, 20);
+            this.lb11.Size = new System.Drawing.Size(240, 25);
             this.lb11.TabIndex = 20;
             this.lb11.Text = "11.          30000             ";
             // 
@@ -291,9 +309,10 @@
             this.lb7.BackColor = System.Drawing.Color.SteelBlue;
             this.lb7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb7.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb7.Location = new System.Drawing.Point(688, 326);
+            this.lb7.Location = new System.Drawing.Point(917, 401);
+            this.lb7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb7.Name = "lb7";
-            this.lb7.Size = new System.Drawing.Size(199, 20);
+            this.lb7.Size = new System.Drawing.Size(240, 25);
             this.lb7.TabIndex = 21;
             this.lb7.Text = "7.             6000              ";
             // 
@@ -303,9 +322,10 @@
             this.lb6.BackColor = System.Drawing.Color.SteelBlue;
             this.lb6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb6.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb6.Location = new System.Drawing.Point(688, 359);
+            this.lb6.Location = new System.Drawing.Point(917, 442);
+            this.lb6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb6.Name = "lb6";
-            this.lb6.Size = new System.Drawing.Size(199, 20);
+            this.lb6.Size = new System.Drawing.Size(240, 25);
             this.lb6.TabIndex = 22;
             this.lb6.Text = "6.             3000              ";
             // 
@@ -315,9 +335,10 @@
             this.lb5.BackColor = System.Drawing.Color.SteelBlue;
             this.lb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb5.ForeColor = System.Drawing.Color.White;
-            this.lb5.Location = new System.Drawing.Point(688, 392);
+            this.lb5.Location = new System.Drawing.Point(917, 482);
+            this.lb5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb5.Name = "lb5";
-            this.lb5.Size = new System.Drawing.Size(199, 20);
+            this.lb5.Size = new System.Drawing.Size(240, 25);
             this.lb5.TabIndex = 23;
             this.lb5.Text = "5.             2000              ";
             // 
@@ -327,9 +348,10 @@
             this.lb4.BackColor = System.Drawing.Color.SteelBlue;
             this.lb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb4.Location = new System.Drawing.Point(688, 425);
+            this.lb4.Location = new System.Drawing.Point(917, 523);
+            this.lb4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb4.Name = "lb4";
-            this.lb4.Size = new System.Drawing.Size(199, 20);
+            this.lb4.Size = new System.Drawing.Size(240, 25);
             this.lb4.TabIndex = 24;
             this.lb4.Text = "4.             1000              ";
             // 
@@ -339,9 +361,10 @@
             this.lb3.BackColor = System.Drawing.Color.SteelBlue;
             this.lb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb3.Location = new System.Drawing.Point(688, 458);
+            this.lb3.Location = new System.Drawing.Point(917, 564);
+            this.lb3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb3.Name = "lb3";
-            this.lb3.Size = new System.Drawing.Size(199, 20);
+            this.lb3.Size = new System.Drawing.Size(240, 25);
             this.lb3.TabIndex = 25;
             this.lb3.Text = "3.             600                ";
             // 
@@ -351,9 +374,10 @@
             this.lb2.BackColor = System.Drawing.Color.SteelBlue;
             this.lb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb2.Location = new System.Drawing.Point(688, 491);
+            this.lb2.Location = new System.Drawing.Point(917, 604);
+            this.lb2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb2.Name = "lb2";
-            this.lb2.Size = new System.Drawing.Size(199, 20);
+            this.lb2.Size = new System.Drawing.Size(240, 25);
             this.lb2.TabIndex = 26;
             this.lb2.Text = "2.             400                ";
             // 
@@ -363,9 +387,10 @@
             this.lb1.BackColor = System.Drawing.Color.SteelBlue;
             this.lb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lb1.Location = new System.Drawing.Point(688, 524);
+            this.lb1.Location = new System.Drawing.Point(917, 645);
+            this.lb1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(199, 20);
+            this.lb1.Size = new System.Drawing.Size(240, 25);
             this.lb1.TabIndex = 27;
             this.lb1.Text = "1.             200                ";
             // 
@@ -374,9 +399,10 @@
             this.bt5050.BackColor = System.Drawing.Color.SteelBlue;
             this.bt5050.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt5050.Image = ((System.Drawing.Image)(resources.GetObject("bt5050.Image")));
-            this.bt5050.Location = new System.Drawing.Point(688, 12);
+            this.bt5050.Location = new System.Drawing.Point(917, 15);
+            this.bt5050.Margin = new System.Windows.Forms.Padding(4);
             this.bt5050.Name = "bt5050";
-            this.bt5050.Size = new System.Drawing.Size(75, 35);
+            this.bt5050.Size = new System.Drawing.Size(100, 43);
             this.bt5050.TabIndex = 28;
             this.bt5050.UseVisualStyleBackColor = false;
             this.bt5050.Click += new System.EventHandler(this.bt5050_Click);
@@ -387,9 +413,10 @@
             this.btDung.BackColor = System.Drawing.Color.SteelBlue;
             this.btDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btDung.Image = ((System.Drawing.Image)(resources.GetObject("btDung.Image")));
-            this.btDung.Location = new System.Drawing.Point(812, 12);
+            this.btDung.Location = new System.Drawing.Point(1083, 15);
+            this.btDung.Margin = new System.Windows.Forms.Padding(4);
             this.btDung.Name = "btDung";
-            this.btDung.Size = new System.Drawing.Size(75, 35);
+            this.btDung.Size = new System.Drawing.Size(100, 43);
             this.btDung.TabIndex = 29;
             this.btDung.UseVisualStyleBackColor = false;
             this.btDung.Click += new System.EventHandler(this.btDung_Click);
@@ -436,9 +463,10 @@
             this.lbB.BackColor = System.Drawing.Color.Blue;
             this.lbB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbB.Location = new System.Drawing.Point(362, 442);
+            this.lbB.Location = new System.Drawing.Point(483, 544);
+            this.lbB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbB.Name = "lbB";
-            this.lbB.Size = new System.Drawing.Size(21, 20);
+            this.lbB.Size = new System.Drawing.Size(26, 25);
             this.lbB.TabIndex = 4;
             this.lbB.Text = "B";
             // 
@@ -447,8 +475,9 @@
             this.ptbThuaCuoc.Image = ((System.Drawing.Image)(resources.GetObject("ptbThuaCuoc.Image")));
             this.ptbThuaCuoc.InitialImage = ((System.Drawing.Image)(resources.GetObject("ptbThuaCuoc.InitialImage")));
             this.ptbThuaCuoc.Location = new System.Drawing.Point(0, 0);
+            this.ptbThuaCuoc.Margin = new System.Windows.Forms.Padding(4);
             this.ptbThuaCuoc.Name = "ptbThuaCuoc";
-            this.ptbThuaCuoc.Size = new System.Drawing.Size(902, 574);
+            this.ptbThuaCuoc.Size = new System.Drawing.Size(1203, 706);
             this.ptbThuaCuoc.TabIndex = 30;
             this.ptbThuaCuoc.TabStop = false;
             this.ptbThuaCuoc.Click += new System.EventHandler(this.ptbThuaCuoc_Click);
@@ -460,9 +489,10 @@
             this.lbTienThuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbTienThuong.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbTienThuong.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lbTienThuong.Location = new System.Drawing.Point(555, 82);
+            this.lbTienThuong.Location = new System.Drawing.Point(229, 574);
+            this.lbTienThuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTienThuong.Name = "lbTienThuong";
-            this.lbTienThuong.Size = new System.Drawing.Size(143, 37);
+            this.lbTienThuong.Size = new System.Drawing.Size(174, 46);
             this.lbTienThuong.TabIndex = 31;
             this.lbTienThuong.Text = "2000000";
             // 
@@ -476,24 +506,33 @@
             this.tmChoiNgay.Interval = 1000;
             this.tmChoiNgay.Tick += new System.EventHandler(this.tmChoiNgay_Tick);
             // 
-            // btThongTin
+            // lbYourScore
             // 
-            this.btThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btThongTin.Location = new System.Drawing.Point(12, 12);
-            this.btThongTin.Name = "btThongTin";
-            this.btThongTin.Size = new System.Drawing.Size(73, 25);
-            this.btThongTin.TabIndex = 32;
-            this.btThongTin.Text = "Thông tin";
-            this.btThongTin.UseVisualStyleBackColor = true;
-            this.btThongTin.Click += new System.EventHandler(this.btThongTin_Click);
+            this.lbYourScore.AutoSize = true;
+            this.lbYourScore.BackColor = System.Drawing.Color.White;
+            this.lbYourScore.Font = new System.Drawing.Font("Segoe UI Historic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbYourScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbYourScore.Location = new System.Drawing.Point(21, 574);
+            this.lbYourScore.Name = "lbYourScore";
+            this.lbYourScore.Size = new System.Drawing.Size(194, 45);
+            this.lbYourScore.TabIndex = 33;
+            this.lbYourScore.Text = "Your Score:";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(570, 442);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
+            this.flowLayoutPanel1.TabIndex = 34;
             // 
             // FmChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(899, 572);
-            this.Controls.Add(this.btThongTin);
+            this.ClientSize = new System.Drawing.Size(1199, 704);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.lbYourScore);
             this.Controls.Add(this.lbTienThuong);
             this.Controls.Add(this.ptbThuaCuoc);
             this.Controls.Add(this.btDung);
@@ -525,6 +564,7 @@
             this.Controls.Add(this.btA);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FmChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -577,7 +617,8 @@
         private System.Windows.Forms.Label lbTienThuong;
         private System.Windows.Forms.Timer tmThuaCuoc;
         private System.Windows.Forms.Timer tmChoiNgay;
-        private System.Windows.Forms.Button btThongTin;
+        private System.Windows.Forms.Label lbYourScore;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

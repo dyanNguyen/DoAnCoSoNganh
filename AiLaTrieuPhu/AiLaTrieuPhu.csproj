@@ -54,12 +54,6 @@
     <Compile Include="FmKhoiDong.Designer.cs">
       <DependentUpon>FmKhoiDong.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmThongTin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fmThongTin.Designer.cs">
-      <DependentUpon>fmThongTin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,9 +64,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FmKhoiDong.resx">
       <DependentUpon>FmKhoiDong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fmThongTin.resx">
-      <DependentUpon>fmThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

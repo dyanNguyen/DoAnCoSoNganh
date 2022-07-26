@@ -24,7 +24,7 @@ namespace AiLaTrieuPhu
             ////sound.controls.play();
 
             //thêm đường dẫn thư mục Audio
-            SoundPlayer Sound = new SoundPlayer(soundLocation: @"D:\dacsn\AiLaTrieuPhu\AiLaTrieuPhu\Resources\Audio\" + ten );
+            SoundPlayer Sound = new SoundPlayer(soundLocation: @"C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\Resources\Audio\" + ten );
             Sound.Play();
         }
 

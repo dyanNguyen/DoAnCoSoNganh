@@ -4,32 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Data.OleDb;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace AiLaTrieuPhu
 {
     class C_KetNoi
     {
-        private static OleDbConnection con;
+        private static SqlConnection con;
 
         public static void ketNoi()
         {
-            string chuoiKetNoi = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Data\CauHoiAiLaTrieuPhu.accdb";
-            con = new OleDbConnection(chuoiKetNoi);
+            string chuoiKetNoi = @"Data Source=LAPTOP-HLV1F66B\SQLEXPRESS;Initial Catalog=CauHoi;Integrated Security=True";
+            con = new SqlConnection(chuoiKetNoi);
             con.Open();
-
         }
 
         public static void dongKetNoi()
         {
-            string chuoiKetNoi = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Data\CauHoiAiLaTrieuPhu.accdb";
-            con = new OleDbConnection(chuoiKetNoi);
+            string chuoiKetNoi = @"Data Source=LAPTOP-HLV1F66B\SQLEXPRESS;Initial Catalog=CauHoi;Integrated Security=True";
+            con = new SqlConnection(chuoiKetNoi);
             //đóng kết nối
             con.Close();
             //giải phóng bộ nhớ
             con.Dispose();
             con = null;
         }
-
+        
         /// <summary>
         /// lấy dữ liệu từ một ô
         /// </summary>
@@ -40,10 +40,10 @@ namespace AiLaTrieuPhu
         public static string layDuLieu(string sql, string cot, int i)
         {
             //tạo câu lệnh truy vấn
-            OleDbCommand cm = new OleDbCommand(sql, con);
+            SqlCommand cm = new SqlCommand(sql, con);
 
             //lưu dữ liệu sau khi truy vấn vào data
-            OleDbDataAdapter data = new OleDbDataAdapter(cm);
+            SqlDataAdapter data = new SqlDataAdapter(cm);
             
             DataTable tbl = new DataTable();
             //đổ dữ liệu từ data vào bảng tbl

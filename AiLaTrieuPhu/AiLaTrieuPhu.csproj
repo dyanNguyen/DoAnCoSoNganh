@@ -109,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DrWho1.png_2.ico" />
-    <Content Include="icon.ico" />
     <Content Include="iconpic.ico" />
     <None Include="Resources\Icon1.ico" />
   </ItemGroup>

@@ -69,7 +69,6 @@
             this.tmThuaCuoc = new System.Windows.Forms.Timer(this.components);
             this.tmChoiNgay = new System.Windows.Forms.Timer(this.components);
             this.lbYourScore = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.ptbThuaCuoc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -489,7 +488,7 @@
             this.lbTienThuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbTienThuong.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbTienThuong.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lbTienThuong.Location = new System.Drawing.Point(229, 574);
+            this.lbTienThuong.Location = new System.Drawing.Point(233, 603);
             this.lbTienThuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTienThuong.Name = "lbTienThuong";
             this.lbTienThuong.Size = new System.Drawing.Size(174, 46);
@@ -512,18 +511,11 @@
             this.lbYourScore.BackColor = System.Drawing.Color.White;
             this.lbYourScore.Font = new System.Drawing.Font("Segoe UI Historic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbYourScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbYourScore.Location = new System.Drawing.Point(21, 574);
+            this.lbYourScore.Location = new System.Drawing.Point(12, 604);
             this.lbYourScore.Name = "lbYourScore";
             this.lbYourScore.Size = new System.Drawing.Size(194, 45);
             this.lbYourScore.TabIndex = 33;
             this.lbYourScore.Text = "Your Score:";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(570, 442);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
-            this.flowLayoutPanel1.TabIndex = 34;
             // 
             // FmChinh
             // 
@@ -531,7 +523,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1199, 704);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lbYourScore);
             this.Controls.Add(this.lbTienThuong);
             this.Controls.Add(this.ptbThuaCuoc);
@@ -618,7 +609,6 @@
         private System.Windows.Forms.Timer tmThuaCuoc;
         private System.Windows.Forms.Timer tmChoiNgay;
         private System.Windows.Forms.Label lbYourScore;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

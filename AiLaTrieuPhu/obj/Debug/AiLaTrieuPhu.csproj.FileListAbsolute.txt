@@ -31,7 +31,6 @@ C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\bin\Debug\AiLaTrieuPhu.exe
 C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\bin\Debug\AiLaTrieuPhu.pdb
 C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\bin\Debug\Interop.MediaPlayer.dll
 C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\bin\Debug\Interop.WMPLib.dll
-C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Debug\AiLaTrieuPhu.csproj.AssemblyReference.cache
 C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Debug\Interop.MediaPlayer.dll
 C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Debug\Interop.WMPLib.dll
 C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Debug\AiLaTrieuPhu.csproj.ResolveComReference.cache

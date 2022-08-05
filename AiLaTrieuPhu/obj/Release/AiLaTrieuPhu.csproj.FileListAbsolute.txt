@@ -1,0 +1,15 @@
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\bin\Release\AiLaTrieuPhu.exe
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\bin\Release\AiLaTrieuPhu.pdb
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\bin\Release\Interop.MediaPlayer.dll
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\bin\Release\Interop.WMPLib.dll
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.csproj.AssemblyReference.cache
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\Interop.MediaPlayer.dll
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\Interop.WMPLib.dll
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.csproj.ResolveComReference.cache
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.FmKhoiDong.resources
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.FmChinh.resources
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.Properties.Resources.resources
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.csproj.GenerateResource.cache
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.exe
+C:\Users\ASUS\DoAnCoSoNganh\AiLaTrieuPhu\obj\Release\AiLaTrieuPhu.pdb
